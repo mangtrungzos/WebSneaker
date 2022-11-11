@@ -1,0 +1,77 @@
+.header{
+    height: var(--header-height);
+    background-color: #111111;
+}
+
+.header__navbar{
+    display: flex;
+    height: var(--navbar-height);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navbar-list{
+    list-style: none;
+    display: flex;
+    margin-top: 24px;
+}
+
+.header__navbar-item{
+    color: var(--text-color-header);
+    font-size: 1.4rem;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.header__navbar-language:hover{
+    color: #a2bcbd;
+}
+
+.header__navbar-icon-link{
+    text-decoration: none;
+    color: var(--text-color-header);
+    font-size: 1.6rem;
+}
+
+.header__navbar-search-text{
+    color: var(--text-color-header);
+    margin-left: 10px;
+}
+
+.header__navbar-logo{
+    color: var(--text-color-header);
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.header__navbar-icon{
+    font-weight: 400;
+}
+
+.header__navbar-icon-shopping{
+    font-weight: 100;
+}
+
+.header__primary{
+    margin-top: 28px;
+}
+
+.header__navbar-primary{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.header__navbar-category{
+    margin: 0 8px;
+}
+
+.header-category-sale{
+    color: #f57171;
+}
+
+.header-category-link{
+    text-decoration: none;
+    color: var(--text-color-header);
+    font-size: 1.4rem;
+}
