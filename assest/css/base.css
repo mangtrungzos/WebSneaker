@@ -1,7 +1,9 @@
 :root{
-    --header-height: 120px;
-    --navbar-height: 55px;
+    --white-color: #fff;
+    --header-height: 110px;
+    --navbar-height: 45px;
     --text-color-header: #fcfaf3;
+    --text-color: #000;
 }
 
 *{
@@ -32,10 +34,10 @@ html{
     margin-right: -10px;
 }
 
-.grid__column-2{
+.grid__column-3{
     padding-left: 10px;
     padding-right: 10px;
-    width: 16.6667%;
+    width: 25%;
 }
 
 .grid__column-2-4{
@@ -44,10 +46,10 @@ html{
     width: 20%;
 }
 
-.grid__column-8{
+.grid__column-9{
     padding-left: 10px;
     padding-right: 10px;
-    width: 66.6667%;
+    width: 66.666775%;
 }
 
 @keyframes fadeIn{

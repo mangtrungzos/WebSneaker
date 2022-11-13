@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assest/css/base.css">
     <link rel="stylesheet" href="./assest/css/main.css">
+    <link rel="stylesheet" href="./assest/css/fonts/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/webfonts/fa-regular-400.ttf">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assest/css/fonts/fontawesome/css/all.min.css">
-    <title>Sneaker</title>
+    <meta data-react-helmet="true" property="og:title" content="Design Sneakers for Women | NET-A-PORTER">
+    <title>Design Sneakers for Women</title>
 </head>
 <body>
     <div class="app">
@@ -17,13 +19,32 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-user">
                             <a href="" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fa-regular fa-user"></i>
                             </a>
                             <div class="header__account">
-                                <span class="header__acount-header">MY ACCOUNT</span>
-                                ul.header__account-list
+                                <header class="header__account-header">
+                                    <h2>MY ACCOUNT</h2>
+                                </header>
+                                <div class="header__account-inf">
+                                    <p class="text">
+                                        <label for="" class="header__account-label">Email Address</label>
+                                    </p>
+                                    <input type="text" class="header__account-email">
+                                    <p class="text">
+                                        <label for="" class="header__account-label">Password</label>
+                                    </p>
+                                    <input type="text" class="header__account-password">
+                                    <button class="header__account-signin">Sign in</button>
+                                    <div class="header__account-fgpwd">
+                                        <a href="" class="account-fgpwd">Forgotten Your Password?</a>
+                                    </div>
+                                    <div class="header__account-ftr">
+                                        <span class="account-ftr">Don't have an account?</span>
+                                        <a href="" class="account-ftr-link">Register now</a>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li class="header__navbar-item">
@@ -42,18 +63,54 @@
                             <i class="header__navbar-icon fa-sharp fa-solid fa-magnifying-glass"></i>
                             <span class="header__navbar-search-text">Search</span>
                         </li>
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-wlst">
                             <a href="" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fa-regular fa-star"></i>
                             </a>
+                            <div class="header__wlst">
+                                <header class="header__wlst-header">
+                                    <h2>WITH LIST</h2>
+                                </header>
+                                <div class="header__wlst-inf">
+                                    <p class="text">
+                                        <label for="" class="header__wlst-label">Email Address</label>
+                                    </p>
+                                    <input type="text" class="header__wlst-email">
+                                    <p class="text">
+                                        <label for="" class="header__wlst-label">Password</label>
+                                    </p>
+                                    <input type="text" class="header__wlst-password">
+                                    <button class="header__wlst-signin">Sign in</button>
+                                    <div class="header__wlst-fgpwd">
+                                        <a href="" class="account-fgpwd">Forgotten Your Password?</a>
+                                    </div>
+                                    <div class="header__wlst-ftr">
+                                        <span class="wlst-ftr">Don't have an account?</span>
+                                        <a href="" class="wlst-ftr-link">Register now</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-shpping">
                             <a href="" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon-shopping fa-solid fa-bag-shopping"></i>
                             </a>
+                            <div class="header__shpping">
+                                <div class="shpping-icon">
+                                    <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" class="header__shpping-icon">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M48 0v48H0V0z"/><path d="M33 12v-1c0-4.963-4.037-9-9-9s-9 4.037-9 9v1H2v33h44V12H33zm-16-1c0-3.86 3.14-7 7-7s7 3.14 7 7v1H17v-1zm27 32H4V14h40v29z" fill="#000" fill-rule="nonzero"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <p class="header__shpping-text">Your Shopping Bag is empty</p>
+                                <a href="" class="header__shpping-link">Shop What's New</a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
+                
+                </div>
                 <div class="header__primary">
                     <ul class="header__navbar-primary">
                         <li class="header__navbar-category">
@@ -124,9 +181,28 @@
         </header>
         
         <div class="container">
-
+            <div class="header__container-content">
+                <h2 class="header__title">SHOES</h2>
+                <h1 class="header__subtitle">Sneakers</h1>
+            </div>
+            <div class="grid">
+                <div class="productlisting__refine">
+                    <div class="productlisting__total">
+                        <span class="productlisting__totalProdcuts">521 Results</span>
+                    </div>
+                    <div class="productlisting__orderby">
+                        <span class="productlisting__orderbyProducts">Recommended</span>
+                    </div>
+                </div>
+                <div class="grid__row">
+                    <div class="grid__column-3">
+                        <div class="category">
+                            div.category-
+                        </div>          
+                    </div>
+                </div>
+            </div>
         </div>
-
         <footer class="footer">
 
         </footer>
