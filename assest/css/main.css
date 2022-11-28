@@ -598,9 +598,131 @@
 
 .scrolltotop__icon{
     -webkit-transition: -webkit-transform .2s ease;
+    margin-left: 49px;
 }
 
 .scrolltotop__icon:hover{
     cursor: pointer;
     transform: translateY(-5px);
+}
+
+.pagination__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 70px 0;
+    align-items: center;
+}
+
+.pagination__link{
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.pagination-text{
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.pagination-currentpage{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 30px;
+}
+
+.pagination-icon{
+    font-weight: 300;
+}
+
+.pagination__left--disabled{
+    color: #d4d4d4;
+}
+
+.pagination__right{
+    -webkit-transition: -webkit-transform .2s ease;
+}
+
+
+.pagination__right:hover{
+    transform: translateX(5px);
+}   
+
+
+.account__untility{
+
+}
+
+.account__untility-details{
+
+}
+
+.account__untility-text{
+
+}
+
+.paragraph{
+
+}
+
+.registrationform{
+
+}
+
+.registrationform__email{
+
+}
+
+.registration__email-text{
+
+}
+
+.buttonsubmit{
+
+}
+
+.registration__button-submit{
+
+}
+
+.socials-container{
+
+}
+
+.socialicon{
+
+}
+
+.socialicon__item{
+
+}
+
+.contactpane{
+
+}
+
+.heading{
+
+}
+
+.contact__telephone{
+
+}
+
+.contact__telephone-link{
+
+}
+
+.contact__email{
+
+}
+
+.contact__email-link{
+
+}
+
+.localswitch{
+
+}
+
+.localswitch__language{
+
 }
