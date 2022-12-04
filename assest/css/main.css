@@ -68,8 +68,34 @@
     list-style: none;
 }
 
+.header__navbar-category-frst,
 .header__navbar-category{
     margin: 0 8px;
+    padding: 0 0 17px;
+}
+
+.header__navbar-category-frst:hover{
+    border-bottom: 2px solid red;
+}
+
+.header__navbar-category-frst::before{
+    content: "";
+    display: block;
+    width: auto;
+    border-bottom: 2px solid transparent;
+    color: #fff;
+}
+
+.header__navbar-category::before{
+    content: "";
+    display: block;
+    width: auto;
+    border-top: 2px solid transparent;
+    color: #fff;
+} 
+
+.header__navbar-category:hover{
+    border-bottom: 2px solid #fff;
 }
 
 .header-category-sale{
@@ -91,6 +117,7 @@
     top: 31px;
     box-shadow: 0 1px 2px #e5e5e5;
     display: none;
+    z-index: 1;
 }
 
 .header__navbar-user:hover .header__account{
@@ -417,13 +444,16 @@
     letter-spacing: .5px;
     color: #656565;
     font-weight: 400;
+    margin: 10px 0 0;
 }
 
 .header__subtitle{
     letter-spacing: 1px;
-    font-family: 'Chronicle Display', sans-serif;
+    font-family: serif;
     color: #000000;
-    font-weight: 600;
+    font-weight: 550;
+    font-size: 2.5rem;
+    margin: 8px 0;
 }
 
 .product-heading{
@@ -458,7 +488,11 @@
     background: none;
     padding: 12px 0 12px 12px;
     margin-right: 33px;
+}
+
+.productlisting__orderby:hover{
     cursor: pointer;
+    border: 1px solid #111;
 }
 
 .productlisting__icon{
@@ -513,8 +547,12 @@
     padding: 13px 15px 13px 16px;
     margin: 0 8px 24px 0;
     font: 14px/18px 'AkkuratPro',Sans-Serif;
-    cursor: pointer;
     border-radius: 2px;
+}
+
+.filtertag__link:hover{
+    cursor: pointer;
+    border: 1px solid #111;
 }
 
 .filtertag__icon{
@@ -531,7 +569,7 @@
 }
 
 .product-img{
-    width: 315px;
+    width: 330px;
     height: 450px;
 }
 
@@ -569,10 +607,6 @@
 
 
 /* footer */
-.footer{
-    height: 1000px;
-}
-
 .scrolltotop{
     width: 1400px;
     margin: 0 auto;
@@ -627,6 +661,7 @@
     font-size: 1.4rem;
     color: var(--text-color);
     margin-left: 30px;
+    cursor: default;
 }
 
 .pagination-icon{
@@ -635,6 +670,7 @@
 
 .pagination__left--disabled{
     color: #d4d4d4;
+    cursor: default;
 }
 
 .pagination__right{
@@ -644,85 +680,267 @@
 
 .pagination__right:hover{
     transform: translateX(5px);
-}   
-
-
-.account__untility{
-
 }
 
-.account__untility-details{
-
+.footer__layout{
+    padding-top: 48px;
 }
 
-.account__untility-text{
+.footer__layout-area{
+    background-color: #f0f0f0;
+    width: 100%;
+    margin-top: 38px;
+}
 
+.heading2{
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.heading2--secondary{
+    font: 400 18px/22px ChronicleText,Georgia,Serif;
+}
+
+.account__untility::before{
+    content: "";
+    display: block;
+    position: relative;
+    border-top: 1px solid #cbcbcb;
+    width: 48px;
+    bottom: -180px;
 }
 
 .paragraph{
-
+    margin: 20px 0 20px;
+    color: #656565;
+    font: 1.3rem AkkuratPro,Sans-Serif;
 }
 
 .registrationform{
-
+    display: flex;
+    margin-bottom: 50px;
 }
 
 .registrationform__email{
-
+    padding-right: 9px;
 }
+
 
 .registration__email-text{
-
+    height: 39px;
+    width: 314px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    border: 1px solid #cbcbcb;
+    border-radius: 2px;
 }
 
-.buttonsubmit{
+.registration__email-text:hover{
+    border: 1px solid #838383;
+}
 
+.registration__email-text:focus{
+    outline: none;
+    border: 1px solid #000;
 }
 
 .registration__button-submit{
-
+    height: 39px;
+    width: 105px;
+    font-size: 1.4rem;
+    border: 1px solid #cbcbcb;
+    border-radius: 2px;
+    color: #cbcbcb;
 }
 
-.socials-container{
-
+.registration__button-submit:hover{
+    cursor: pointer;
+    color: #656565;
+    border: 1px solid #838383;
 }
 
 .socialicon{
-
+    display: flex;
+    list-style: none;
+    padding: 35px 0 50px;
 }
 
 .socialicon__item{
+    font-size: 1.5rem;
+    padding-right: 25px;
+}
+
+.socialicon__item:hover i{
+    cursor: pointer;
 
 }
 
 .contactpane{
-
+    padding-top: 45px;
 }
 
 .heading{
+    font: 12px/16px AkkuratPro, sans-serif;
+    font-weight: 700;
+    color: var(--text-color-footer);
+    margin: 0;
+    text-transform: uppercase;
+}
 
+.contact{
+    display: flex;
 }
 
 .contact__telephone{
-
+    margin: 10px 17px 0 0;
 }
 
 .contact__telephone-link{
+    text-decoration: none;
+    font: 12px/16px AkkuratPro,Sans-Serif;
+    font-weight: 400;
+    letter-spacing: .12px;
+    color: #656565;
+}
 
+.contact__telephone-link:hover,
+.contact__email-link:hover{
+    color: #111;
+    cursor: pointer;
 }
 
 .contact__email{
-
+    margin-top: 10px;
 }
 
 .contact__email-link{
-
+    text-decoration: none;
+    font: 12px/16px AkkuratPro,Sans-Serif;
+    font-weight: 400;
+    letter-spacing: .12px;
+    color: #656565;
 }
 
-.localswitch{
-
+.contact__email-link::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #cbcbcb;
+    transform: rotate(45deg);
+    top: -2px;
+    right: 8px;
+    position: relative;
 }
 
 .localswitch__language{
+    font: 12px/16px AkkuratPro,Sans-Serif;
+    font-weight: 500;
+    letter-spacing: .12px;
+    color: #656565;
+    padding-top: 17px;
+    display: inline-block;
+}
 
+.localswitch{
+    margin-top: 30px;
+}
+
+.localswitch__language:hover{
+    color: #cbcbcb;
+    cursor: pointer;
+}
+
+.footerlink__ftr{
+    margin-top: 40px;
+}
+
+.footer__link{
+    
+}
+
+.footer__heading{
+    text-transform: uppercase;
+    color: var(--text-color-footer);
+    font-size: 1.3rem;
+}
+
+.footer__link-list{
+    list-style: none;
+    padding: 0;
+}
+
+.footer__link-item{
+    padding: 10px 0;
+}
+
+.footerlink__link{
+    text-decoration: none;
+    font: 1.3rem 'AkkuratPro',Sans-Serif;
+    font-weight: 400;
+    color: #716f6d;
+}
+
+.siteswitch2{
+    margin-bottom: 50px;
+}
+
+.siteswitch__heading{
+    text-transform: uppercase;
+    font: 1.4rem Georgia, serif;
+    font-weight: 400;
+    letter-spacing: .13px;
+    cursor: default;
+}
+
+.siteswitch__text{
+    
+}
+
+.siteswitch__texts{
+    color: var(--text-color-footer);
+    font-size: 1.3rem;
+}
+
+.siteswitch__link{
+
+}
+
+.siteswitch__link::after{
+    content: "";
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #111;
+    width: 140px;
+    bottom: -5px;
+}
+
+.siteswitchlink__link{
+    text-decoration: none;
+    color: var(--text-color-footer);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-top: 10px;
+    display: block;
+}
+
+.siteswitchlink__link:hover{
+    color: var(--text-color-product-heading);
+}
+
+.paymentcards__heading{
+    text-transform: uppercase;
+    font: 1.3rem system-ui;
+    letter-spacing: 1px;
+    color: var(--text-color-footer);
+    font-weight: 600;
+}
+
+.paymentcards__wallet{
+
+}
+
+.paymentcards__icon{
+    font-size: 4rem;
+    margin-right: 10px;
 }
