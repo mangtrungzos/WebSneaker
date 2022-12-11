@@ -60,6 +60,7 @@
 
 .header__primary{
     margin-top: 28px;
+    position: relative;
 }
 
 .header__navbar-primary{
@@ -68,14 +69,20 @@
     list-style: none;
 }
 
+.header__navbar-category:hover{
+    cursor: pointer;
+}
+
 .header__navbar-category-frst,
+.header__navbar-category-scd,
 .header__navbar-category{
-    margin: 0 8px;
+    margin: 0 10px;
     padding: 0 0 17px;
 }
 
 .header__navbar-category-frst:hover{
     border-bottom: 2px solid red;
+    cursor: pointer;
 }
 
 .header__navbar-category-frst::before{
@@ -98,6 +105,231 @@
     border-bottom: 2px solid #fff;
 }
 
+/* category menu */
+.categorymenu__slider{
+    max-width: none;
+    z-index: 100;
+    background-color: #fff;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    right: 0;
+    display: none;    
+}
+.categorymenu__slider{
+    height: 533px;
+}
+
+.header__navbar-category-frst:hover .categorymenu__slider{
+    display: block;
+}
+
+.categorymenu,
+.header-categorymenu2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.header__categorymenu{
+    margin-top: 20px;
+    width: 25%;
+}
+
+.header__categorymenuLine{
+    border-left: 1px solid #ccc;
+    height: 320px;
+}
+
+.category-heading{
+    color: rgb(101, 101, 101);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3rem;
+
+}
+
+.categorymenu-item{
+    list-style: none;
+    font-size: 1.4rem;
+    color: #111;
+    padding: 10px 0;
+}
+
+.categorymenu__img{
+    margin-top: 15px;
+}
+
+.category__img{
+    width: 310px;
+    height: 310px;
+    
+}
+
+.categorymenu__link{
+    text-decoration: none;
+}
+
+.categorymenu__text{
+    font: normal 16px/20px 'ChronicleText',Georgia,Serif;
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #111;
+}
+
+.categorymenu__text2{
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-decoration: none;
+    color: #111;
+}
+
+.categorymenu2{
+    max-width: none;
+    z-index: 100;
+    background-color: #fff;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.header__navbar-category-scd:hover .categorymenu2{
+    display: block;
+}
+
+.categorymenu2{
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.header-categorymenu2{
+    margin-top: 20px;
+}
+
+.header__categorymenu2{
+    width: 33.33333%;
+}
+
+.header__categorymenu2-layout1{
+    width: 30%;
+}
+
+.header__categorymenu2-layout2{
+    /* width: 70%; */
+}
+
+.header__categorymenu2-brght{
+    border-right: 1px solid #ccc;
+    height: calc(533px - 20%);
+}
+
+.header__categorymenu2-col2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.categorymenu2__heading{
+    color: rgb(101, 101, 101);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.categorymenu2__heading:hover{
+    cursor: text;
+}
+
+.categorymenu2__parh{
+    max-width: 100%;
+}
+
+.categorymenu2-item{
+    list-style: none;
+}
+
+.categorymenu2__link{
+    text-decoration: none;
+    color: #111;
+    font-size: 1.4rem;
+}
+
+.categorymenu2__img{
+    /* width: 303px;
+    height: 303px; */
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+}
+
+.categorymenu2__paragraph{
+    color: #111;
+    font: normal 16px/20px 'ChronicleText',Georgia,Serif;
+    display: block;
+    margin: 20px 0;
+}
+
+.categorymenu2__text{
+    font-size: 1.3rem;
+    color: rgb(101, 101, 101);
+    border-bottom: 1px solid #111;
+}
+
+.categorymenu2__paragraph,
+.categorymenu2__text{
+    text-decoration: none;
+}
+
+.categorymenu2-lastStories{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.categorymenu2__fashion-img{
+    width: 100px;
+    height: 125px;
+}
+
+.categorymenu2__fashion-img:hover{
+    cursor: pointer;
+}
+
+.categorymenu2__info{
+    margin-left: 20px;
+}
+
+.categorymenu2__info-link{
+    text-decoration: none;
+}
+
+.categorymenu2__header{
+    text-transform: uppercase;
+    font: 12px/16px 'AkkuratPro', sans-serif;
+    letter-spacing: .15rem;
+    color: #111;
+    font-weight: 500;
+    margin: 0;
+}
+
+.categorymenu2__intro{
+    color: #111;
+    font: 16px/24px 'ChronicleText',Georgia,Serif;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.categorymenu2__time{
+    font-size: 1.3rem;
+    color: rgb(101, 101, 101);
+}
+
+
 .header-category-sale{
     color: #f57171;
 }
@@ -105,7 +337,9 @@
 .header-category-link{
     text-decoration: none;
     color: var(--text-color-header);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    height: 37px;
 }
 
 .header__account{
@@ -893,17 +1127,9 @@
     cursor: default;
 }
 
-.siteswitch__text{
-    
-}
-
 .siteswitch__texts{
     color: var(--text-color-footer);
     font-size: 1.3rem;
-}
-
-.siteswitch__link{
-
 }
 
 .siteswitch__link::after{
@@ -936,11 +1162,10 @@
     font-weight: 600;
 }
 
-.paymentcards__wallet{
-
-}
-
 .paymentcards__icon{
     font-size: 4rem;
     margin-right: 10px;
 }
+
+
+
