@@ -77,7 +77,7 @@
 .header__navbar-category-scd,
 .header__navbar-category{
     margin: 0 10px;
-    padding: 0 0 17px;
+    padding: 0 0 16px;
 }
 
 .header__navbar-category-frst:hover{
@@ -355,6 +355,9 @@
     margin-top: 20px;
 }
 
+.categorymenu3-img{
+    margin-top: 17px;
+}
 
 .categorymefnu3__img{
     width: 308px;
@@ -499,9 +502,58 @@
 .header__navbar-category-scd6:hover .categorymenu7{
     display: block;
 }
-.header-category-sale{
-    color: #f57171;
+/* secondary menu 8 */
+.categorymenu8, 
+.categorymenu9,
+.categorymenu10{
+    position: absolute;
+    top: 37px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    height: 530px;
+    cursor: default;
+    z-index: 10;
+    display: none;
 }
+
+.header__navbar-category-scd7:hover .categorymenu8{
+    display: block;
+}
+
+.header-categorymenu8,
+.header-categorymenu9{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+/* secondary menu 9 */
+.header__navbar-category-scd8:hover .categorymenu9{
+    display: block;
+}
+
+/* secondary menu 10 */
+.header__navbar-category-scd9:hover .categorymenu10{
+    display: block;
+}
+
+.header-categorymenu10{
+    display: flex;
+    justify-content: space-around;
+}
+
+.categorymenu10-img{
+    margin: 0;
+}
+
+.header__categorymenu10{
+    margin-top: 20px;
+}
+
+.header-category-sale{
+    color: #f57171;       
+}                            
 
 .header-category-link{
     text-decoration: none;
