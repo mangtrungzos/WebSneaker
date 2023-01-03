@@ -180,10 +180,6 @@
     height: 533px;
 }
 
-.header__navbar-category-frst{
-}
-
-
 .header__navbar-category-frst:hover .categorymenu__slider{
     display: block;
 }
