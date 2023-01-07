@@ -1,0 +1,56 @@
+/* full PC */
+@media (min-width: 76.875em){
+    .checkbtn{
+        display: none;
+    }
+}
+
+@media (min-width: 64em) and (max-width:  76.25em){
+    .checkbtn{
+        display: none;
+    }
+    .header__navbar-none{
+        padding-left: 0;
+    }
+
+}
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .header{
+        height: 50px;
+    }
+    .header__navbar{
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    .header__navbar-none{
+        display: none;
+    }
+    .header__navbar-bars{
+        float: left;
+    }
+    .header__logo,
+    .header__margin-none{
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    
+}
+/* Mobile */
+@media (max-width: 46.1875em){
+
+}
+
+.checkbtn{
+    color: #ccc;
+    font-size: 20px;
+    /* display: none; */
+}
+
+#check{
+    display: none;
+}

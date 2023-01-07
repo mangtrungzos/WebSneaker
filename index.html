@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assest/css/base.css">
     <link rel="stylesheet" href="./assest/css/main.css">
     <link rel="stylesheet" href="./assest/css/grid.css">
+    <link rel="stylesheet" href="./assest/css/responsive.css">
     <!-- <link rel="stylesheet" href="./assest/css/fonts/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/webfonts/fa-regular-400.ttf"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,9 +18,15 @@
 <body>
     <div class="app">
         <header class="header">
+            <div class="header__navbar-bars">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
             <div class="grid wide">
                 <nav class="header__navbar">
-                    <ul class="header__navbar-list">
+                    <ul class="header__navbar-list header__navbar-none">
                         <li class="header__navbar-item header__navbar-user">
                             <a href="" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fa-regular fa-user"></i>
@@ -54,12 +61,12 @@
                             </span>
                         </li>
                     </ul>
-                    <ul class="header__navbar-list">
+                    <ul class="header__navbar-list header__logo">
                         <a href="" class="header__navbar-logo">
                             NET - A - PORTER
                         </a>
                     </ul>
-                    <ul class="header__navbar-list">
+                    <ul class="header__navbar-list header__margin-none">
                         <li class="header__navbar-item">
                             <i class="header__navbar-icon fa-sharp fa-solid fa-magnifying-glass"></i>
                             <span class="header__navbar-search-text">Search</span>
@@ -85,7 +92,7 @@
                                     <div class="header__wlst-fgpwd">
                                         <a href="" class="account-fgpwd">Forgotten Your Password?</a>
                                     </div>
-                                    <div class="header__wlst-ftr">
+                                    <div class="header__wlst-ftr header__margin-none">
                                         <span class="wlst-ftr">Don't have an account?</span>
                                         <a href="" class="wlst-ftr-link">Register now</a>
                                     </div>
@@ -112,7 +119,7 @@
                 </nav>
                 
                 </div>
-                <div class="header__primary">
+                <div class="header__primary header__navbar-none">
                     <div class="header__navbar-primary">
                         <div class="header__navbar-category-frst">
                             <div class="header-category-link-frst">
@@ -279,84 +286,84 @@
                                 </a>
                             </div>
                             <div class="categorymenu3">
-                                <div class="header-categorymenu3">
+                                <div class="header-categorymenu">
                                     <div class="header__categorymenu3">
-                                        <ul class="categorymenu3-list">
+                                        <ul class="categorymenu-list">
                                             <h4 class="categorymenu3__heading">our picks</h4>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Bestseller</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">exclusives</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">NET SUSTAIN</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Back in Stock</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Cult Finds</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Star Designers</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">New Names to Know</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">The Vanguard</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu3">
-                                        <ul class="categorymenu3-list header__categorymenu3-bl">
+                                        <ul class="categorymenu-list header__categorymenu3-bl">
                                             <h4 class="categorymenu3__heading">everyday</h4>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Wardrobe Staples</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Workwear</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Weekend</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">At-Home</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Sportswear</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Finishing Touches</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Winter</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Vacation</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Skiwear</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu3">
-                                        <ul class="categorymenu3-list header__categorymenu3-bl">
+                                        <ul class="categorymenu-list header__categorymenu3-bl">
                                             <h4 class="categorymenu3__heading">events</h4>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Date Night</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Party</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Evening</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Bridal</li>
                                             </a>
-                                            <a href="" class="categorymenu3__link">
+                                            <a href="" class="categorymenu__link">
                                                 <li class="categorymenu3-item">Wedding Guest</li>
                                             </a>
                                         </ul>
@@ -364,7 +371,7 @@
                                     <div class="header__categorymenu3">
                                         <div class="categorymenu3-img">
                                             <a href="" class="categorymenu3__img-link">
-                                                <img src="./img/w800_q65_shopby.png" alt="" class="categorymefnu3__img">
+                                                <img src="./img/w800_q65_shopby.png" alt="" class="categorymenu3__img">
                                             </a>
                                         </div>
                                         <a href="" class="categorymenu__text">Time to shine</a>
@@ -375,100 +382,100 @@
                             <div class="header__navbar-overflow"></div>
                         </div>
                         <div class="header__navbar-category header__navbar-category-scd3">
-                            <div class="header-category-link-scd2">
+                            <div class="header-category-link-scd3">
                                 <a href="" class="header-category-link">
                                     Designers
                                 </a>
                             </div>
                             <div class="categorymenu4">
-                                <div class="header-categorymenu4">
-                                    <div class="header__categorymenu4">
+                                <div class="header-categorymenu">
+                                    <div class="header__categorymenu">
                                         <ul class="categorymenu4-list">
                                             <h4 class="categorymenu4__heading">featured designers</h4>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Designers A-Z List</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Designers A-Z List</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Alaïa</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Alaïa</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Alexander McQueen</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Alexander McQueen</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Balmain</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Balmain</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Bottega Veneta</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Bottega Veneta</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Chloé</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Chloé</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Christian Louboutin</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Christian Louboutin</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Gucci</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Gucci</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Isabel Marant</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Isabel Marant</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Jacquemus</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Jacquemus</li>
                                             </a>
                                         </ul>
                                     </div>
-                                    <div class="header__categorymenu4">
+                                    <div class="header__categorymenu">
                                         <ul class="categorymenu4-list categorymenu4-down">
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Jimmy Choo</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Jimmy Choo</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Khaite</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Khaite</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Loewe</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Loewe</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Loro Piana</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Loro Piana</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">MACH & MACH</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">MACH & MACH</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">SAINT LAURENT</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">SAINT LAURENT</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">The Row</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">The Row</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">TOTEME</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">TOTEME</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Valentino</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Valentino</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Zimmermann</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Zimmermann</li>
                                             </a>
                                         </ul>
                                     </div>
-                                    <div class="header__categorymenu4">
-                                        <ul class="categorymenu4-list header__categorymenu3-brght">
+                                    <div class="header__categorymenu">
+                                        <ul class="categorymenu4list header__categorymenu-brght1">
                                             <h4 class="categorymenu4__heading">discover</h4>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">NET SUSTAIN</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">NET SUSTAIN</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">Star Designers</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Star Designers</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">New Names to Know</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">New Names to Know</li>
                                             </a>
-                                            <a href="" class="categorymenu4__link">
-                                                <li class="categorymenu4-item">The Vanguard</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">The Vanguard</li>
                                             </a>
                                         </ul>
                                     </div>
-                                    <div class="header__categorymenu4">
+                                    <div class="header__categorymenu">
                                         <div class="categorymenu4-img">
                                             <a href="" class="categorymenu4__img-link">
                                                 <img src="./img/blob.jfif" alt="" class="categorymenu__img">
@@ -488,94 +495,94 @@
                                 </a>
                             </div>
                             <div class="categorymenu5">
-                                <div class="header-categorymenu5">
-                                    <div class="header__categorymenu5">
-                                        <ul class="categorymenu5-list">
+                                <div class="header-categorymenu">
+                                    <div class="header__categorymenu">
+                                        <ul class="categorymenu-list">
                                             <h4 class="categorymenu5__heading">clothing</h4>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">All Clothin</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">All Clothin</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Blouses</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Blouses</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Coats</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Coats</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Dresses</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Dresses</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Jackets</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Jackets</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Jeans</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Jeans</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Jumpsuits</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Jumpsuits</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Knitwear</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Knitwear</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Lingerie & Nightwear</li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                    <div class="header__categorymenu5">
-                                        <ul class="categorymenu5-list categorymenu5-down">
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Loungwear</li>
-                                            </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Matching Seperates</li>
-                                            </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Shorts</li>
-                                            </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Skirts</li>
-                                            </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Sports</li>
-                                            </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Suits</li>
-                                            </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Swimwear</li>
-                                            </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Tops</li>
-                                            </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Trousers</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Lingerie & Nightwear</li>
                                             </a>
                                         </ul>
                                     </div>
-                                    <div class="header__categorymenu5">
-                                        <ul class="categorymenu5-list header__categorymenu3-brght">
+                                    <div class="header__categorymenu">
+                                        <ul class="categorymenu-list categorymenu5-down">
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Loungwear</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Matching Seperates</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Shorts</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Skirts</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Sports</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Suits</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Swimwear</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Tops</li>
+                                            </a>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Trousers</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <div class="header__categorymenu">
+                                        <ul class="categorymenu5list header__categorymenu-brght1">
                                             <h4 class="categorymenu5__heading">transeasonal style</h4>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Blazers</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Blazers</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Midi Dresses</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Midi Dresses</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Shirts</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Shirts</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Sweaters</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Sweaters</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Trench Coats</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Trench Coats</li>
                                             </a>
-                                            <a href="" class="categorymenu5__link">
-                                                <li class="categorymenu5-item">Wide Leg Trousers</li>
+                                            <a href="" class="categorymenu__link">
+                                                <li class="categorymenu__item-general">Wide Leg Trousers</li>
                                             </a>
                                         </ul>
                                     </div>
-                                    <div class="header__categorymenu5">
+                                    <div class="header__categorymenu">
                                         <div class="categorymenu5-img">
                                             <a href="" class="categorymenu5__img-link">
                                                 <img src="./img/blob (2).jfif" alt="" class="categorymenu__img">
@@ -595,89 +602,89 @@
                                 </a>
                             </div>
                             <div class="categorymenu6">
-                                <div class="header-categorymenu6">
-                                    <div class="header__categorymenu6">
-                                        <ul class="categorymenu6-list">
+                                <div class="header-categorymenu">
+                                    <div class="header__categorymenu">
+                                        <ul class="categorymenu-list">
                                             <h4 class="categorymenu6__heading">shoes</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">All Shoes</li>
+                                                <li class="categorymenu__item-general">All Shoes</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Boots</li>
+                                                <li class="categorymenu__item-general">Boots</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Flat Shoes</li>
+                                                <li class="categorymenu__item-general">Flat Shoes</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Pumps</li>
+                                                <li class="categorymenu__item-general">Pumps</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Sandals</li>
+                                                <li class="categorymenu__item-general">Sandals</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Sneakers</li>
+                                                <li class="categorymenu__item-general">Sneakers</li>
                                             </a>
                                         </ul>
                                     </div>
-                                    <div class="header__categorymenu6">
-                                        <ul class="categorymenu6-list categorymenu6-down header__categorymenu3-brght">
+                                    <div class="header__categorymenu">
+                                        <ul class="categorymenu-list categorymenu6-down header__categorymenu-brght1">
                                             <h4 class="categorymenu6__heading">designers</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Amina Muaddi</li>
+                                                <li class="categorymenu__item-general">Amina Muaddi</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Aquazzura</li>
+                                                <li class="categorymenu__item-general">Aquazzura</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Chloé</li>
+                                                <li class="categorymenu__item-general">Chloé</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Christian Louboutin</li>
+                                                <li class="categorymenu__item-general">Christian Louboutin</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Gianvito Rossi</li>
+                                                <li class="categorymenu__item-general">Gianvito Rossi</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Jimmy Choo</li>
+                                                <li class="categorymenu__item-general">Jimmy Choo</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Manolo Blahnik</li>
+                                                <li class="categorymenu__item-general">Manolo Blahnik</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">SAINT LAURENT</li>
+                                                <li class="categorymenu__item-general">SAINT LAURENT</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">All Designers</li>
+                                                <li class="categorymenu__item-general">All Designers</li>
                                             </a>
                                         </ul>
                                     </div>
-                                    <div class="header__categorymenu6">
-                                        <ul class="categorymenu6-list header__categorymenu3-brght">
+                                    <div class="header__categorymenu">
+                                        <ul class="categorymenu6list header__categorymenu-brght1">
                                             <h4 class="categorymenu6__heading">shop by</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Bestsellers</li>
+                                                <li class="categorymenu__item-general">Bestsellers</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Exclusives</li>
+                                                <li class="categorymenu__item-general">Exclusives</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Eveing</li>
+                                                <li class="categorymenu__item-general">Eveing</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Platforms</li>
+                                                <li class="categorymenu__item-general">Platforms</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Finishing Touches</li>
+                                                <li class="categorymenu__item-general">Finishing Touches</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Party</li>
+                                                <li class="categorymenu__item-general">Party</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu6-item">Winter Boots</li>
+                                                <li class="categorymenu__item-general">Winter Boots</li>
                                             </a>
                                         </ul>
                                     </div>
-                                    <div class="header__categorymenu6">
+                                    <div class="header__categorymenu">
                                         <div class="categorymenu6-img">
                                             <a href="" class="categorymenu6__img-link">
                                                 <img src="./img/blob (3).jfif" alt="" class="categorymenu__img">
@@ -697,82 +704,82 @@
                                 </a>
                             </div>
                             <div class="categorymenu7">
-                                <div class="header-categorymenu7">
+                                <div class="header-categorymenu">
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list">
+                                        <ul class="categorymenu-list">
                                             <h4 class="categorymenu7__heading">bags</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All bags</li>
+                                                <li class="categorymenu__item-general">All bags</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Clutch Bags</li>
+                                                <li class="categorymenu__item-general">Clutch Bags</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Cross-Body Bags</li>
+                                                <li class="categorymenu__item-general">Cross-Body Bags</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Lugguage and Travel </li>
+                                                <li class="categorymenu__item-general">Lugguage and Travel </li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Mini Bags</li>
+                                                <li class="categorymenu__item-general">Mini Bags</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Tote Bags</li>
+                                                <li class="categorymenu__item-general">Tote Bags</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list categorymenu7-down header__categorymenu3-brght">
+                                        <ul class="categorymenu-list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">designers</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Bottege Veneta</li>
+                                                <li class="categorymenu__item-general">Bottege Veneta</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Chloé</li>
+                                                <li class="categorymenu__item-general">Chloé</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Gucci</li>
+                                                <li class="categorymenu__item-general">Gucci</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Jacquemus</li>
+                                                <li class="categorymenu__item-general">Jacquemus</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Loewe</li>
+                                                <li class="categorymenu__item-general">Loewe</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">SAINT LAURENT</li>
+                                                <li class="categorymenu__item-general">SAINT LAURENT</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">The Row</li>
+                                                <li class="categorymenu__item-general">The Row</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Valentino</li>
+                                                <li class="categorymenu__item-general">Valentino</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Designers</li>
+                                                <li class="categorymenu__item-general">All Designers</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list header__categorymenu3-brght">
+                                        <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">shop by</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Bestsellers</li>
+                                                <li class="categorymenu__item-general">Bestsellers</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Exclusives</li>
+                                                <li class="categorymenu__item-general">Exclusives</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Wardrobe Staples</li>
+                                                <li class="categorymenu__item-general">Wardrobe Staples</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Cults Finds</li>
+                                                <li class="categorymenu__item-general">Cults Finds</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Party</li>
+                                                <li class="categorymenu__item-general">Party</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Resell your pre-loved bags</li>
+                                                <li class="categorymenu__item-general">Resell your pre-loved bags</li>
                                             </a>
                                         </ul>
                                     </div>
@@ -796,108 +803,108 @@
                                 </a>
                             </div>
                             <div class="categorymenu8">
-                                <div class="header-categorymenu8">
+                                <div class="header-categorymenu">
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list">
+                                        <ul class="categorymenu-list">
                                             <h4 class="categorymenu7__heading">fashion jewelry</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Fashion Jewelry</li>
+                                                <li class="categorymenu__item-general">All Fashion Jewelry</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fashion Earrings</li>
+                                                <li class="categorymenu__item-general">Fashion Earrings</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fashion Bracelets</li>
+                                                <li class="categorymenu__item-general">Fashion Bracelets</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fashion Necklaces</li>
+                                                <li class="categorymenu__item-general">Fashion Necklaces</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fashion Rings</li>
+                                                <li class="categorymenu__item-general">Fashion Rings</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list header__categorymenu3-brght">
+                                        <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">fine jewelry</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Fine Jewelry</li>
+                                                <li class="categorymenu__item-general">All Fine Jewelry</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fine Watches</li>
+                                                <li class="categorymenu__item-general">Fine Watches</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fine Earrings</li>
+                                                <li class="categorymenu__item-general">Fine Earrings</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fine Necklaces</li>
+                                                <li class="categorymenu__item-general">Fine Necklaces</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fine Bracelets</li>
+                                                <li class="categorymenu__item-general">Fine Bracelets</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fine Rings</li>
+                                                <li class="categorymenu__item-general">Fine Rings</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list header__categorymenu3-brght">
+                                        <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">designers</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Anita Ko</li>
+                                                <li class="categorymenu__item-general">Anita Ko</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Cartier</li>
+                                                <li class="categorymenu__item-general">Cartier</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Chopard</li>
+                                                <li class="categorymenu__item-general">Chopard</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Foundrae</li>
+                                                <li class="categorymenu__item-general">Foundrae</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Jennifer Meyer</li>
+                                                <li class="categorymenu__item-general">Jennifer Meyer</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Piaget</li>
+                                                <li class="categorymenu__item-general">Piaget</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Sophie Bille Brahe</li>
+                                                <li class="categorymenu__item-general">Sophie Bille Brahe</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Suzanne Kalan</li>
+                                                <li class="categorymenu__item-general">Suzanne Kalan</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Sydney Evan</li>
+                                                <li class="categorymenu__item-general">Sydney Evan</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Designers</li>
+                                                <li class="categorymenu__item-general">All Designers</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list header__categorymenu3-brght">
+                                        <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">shop by</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Bestsellers</li>
+                                                <li class="categorymenu__item-general">Bestsellers</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Wardrobe Staples</li>
+                                                <li class="categorymenu__item-general">Wardrobe Staples</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Everyday Jewelry</li>
+                                                <li class="categorymenu__item-general">Everyday Jewelry</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Pearl Jewelry</li>
+                                                <li class="categorymenu__item-general">Pearl Jewelry</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Ear Stacking</li>
+                                                <li class="categorymenu__item-general">Ear Stacking</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Jewelry Cases</li>
+                                                <li class="categorymenu__item-general">Jewelry Cases</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Gifts</li>
+                                                <li class="categorymenu__item-general">Gifts</li>
                                             </a>
                                         </ul>
                                     </div>
@@ -912,94 +919,94 @@
                                 </a>
                             </div>
                             <div class="categorymenu9">
-                                <div class="header-categorymenu9">
+                                <div class="header-categorymenu">
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list">
+                                        <ul class="categorymenu-list">
                                             <h4 class="categorymenu7__heading">Accessories</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Accessories</li>
+                                                <li class="categorymenu__item-general">All Accessories</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Belts</li>
+                                                <li class="categorymenu__item-general">Belts</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fashion Jewelry</li>
+                                                <li class="categorymenu__item-general">Fashion Jewelry</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Hats</li>
+                                                <li class="categorymenu__item-general">Hats</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Hair Accessories</li>
+                                                <li class="categorymenu__item-general">Hair Accessories</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Scarves and Wraps</li>
+                                                <li class="categorymenu__item-general">Scarves and Wraps</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Sunglasses</li>
+                                                <li class="categorymenu__item-general">Sunglasses</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Wallets</li>
+                                                <li class="categorymenu__item-general">Wallets</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu7">
-                                        <ul class="categorymenu7-list  header__categorymenu3-brght">
+                                        <ul class="categorymenu7-ist  header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">designers</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Acne Studios</li>
+                                                <li class="categorymenu__item-general">Acne Studios</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Bottega Veneta</li>
+                                                <li class="categorymenu__item-general">Bottega Veneta</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">CELINE Eyewear</li>
+                                                <li class="categorymenu__item-general">CELINE Eyewear</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Chloé</li>
+                                                <li class="categorymenu__item-general">Chloé</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Dior Eyewear</li>
+                                                <li class="categorymenu__item-general">Dior Eyewear</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Gucci</li>
+                                                <li class="categorymenu__item-general">Gucci</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Loewe</li>
+                                                <li class="categorymenu__item-general">Loewe</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">SAINT LAURENT</li>
+                                                <li class="categorymenu__item-general">SAINT LAURENT</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Valentino</li>
+                                                <li class="categorymenu__item-general">Valentino</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Designers</li>
+                                                <li class="categorymenu__item-general">All Designers</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu7">
-                                    <ul class="categorymenu7-list header__categorymenu3-brght">
+                                    <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">shop by</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Bestsellers</li>
+                                                <li class="categorymenu__item-general">Bestsellers</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Exclusives</li>
+                                                <li class="categorymenu__item-general">Exclusives</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Logo Accessories</li>
+                                                <li class="categorymenu__item-general">Logo Accessories</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Vacation Accessories</li>
+                                                <li class="categorymenu__item-general">Vacation Accessories</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Winter</li>
+                                                <li class="categorymenu__item-general">Winter</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Party</li>
+                                                <li class="categorymenu__item-general">Party</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Gifts</li>
+                                                <li class="categorymenu__item-general">Gifts</li>
                                             </a>
                                         </ul>
                                     </div>
@@ -1025,97 +1032,97 @@
                                 </a>
                             </div>
                             <div class="categorymenu10">
-                                <div class="header-categorymenu10">
+                                <div class="header-categorymenu">
                                     <div class="header__categorymenu10">
-                                        <ul class="categorymenu7-list">
+                                        <ul class="categorymenu-list">
                                             <h4 class="categorymenu7__heading">beauty</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Beauty</li>
+                                                <li class="categorymenu__item-general">All Beauty</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Bath and Body</li>
+                                                <li class="categorymenu__item-general">Bath and Body</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Beauty Sets</li>
+                                                <li class="categorymenu__item-general">Beauty Sets</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Fragrance</li>
+                                                <li class="categorymenu__item-general">Fragrance</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Haircare</li>
+                                                <li class="categorymenu__item-general">Haircare</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Home Fragrance</li>
+                                                <li class="categorymenu__item-general">Home Fragrance</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Makeup</li>
+                                                <li class="categorymenu__item-general">Makeup</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Skincare</li>
+                                                <li class="categorymenu__item-general">Skincare</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Tools and Devices</li>
+                                                <li class="categorymenu__item-general">Tools and Devices</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Wellness</li>
+                                                <li class="categorymenu__item-general">Wellness</li>
                                             </a>    
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu10">
-                                        <ul class="categorymenu7-list header__categorymenu3-brght">
+                                        <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">designers</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">111 Skin</li>
+                                                <li class="categorymenu__item-general">111 Skin</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Aesop</li>
+                                                <li class="categorymenu__item-general">Aesop</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Augustinus Bader</li>
+                                                <li class="categorymenu__item-general">Augustinus Bader</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Charlotte Tilbury</li>
+                                                <li class="categorymenu__item-general">Charlotte Tilbury</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Diptyque</li>
+                                                <li class="categorymenu__item-general">Diptyque</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Dr.Barbara Sturm</li>
+                                                <li class="categorymenu__item-general">Dr.Barbara Sturm</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">La Mer</li>
+                                                <li class="categorymenu__item-general">La Mer</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Westman Atelier</li>
+                                                <li class="categorymenu__item-general">Westman Atelier</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Designers</li>
+                                                <li class="categorymenu__item-general">All Designers</li>
                                             </a>
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu10">
-                                        <ul class="categorymenu7-list header__categorymenu3-brght">
+                                        <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">shop by</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Bestsellers</li>
+                                                <li class="categorymenu__item-general">Bestsellers</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Exclusives</li>
+                                                <li class="categorymenu__item-general">Exclusives</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Vitamin C</li>
+                                                <li class="categorymenu__item-general">Vitamin C</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">HyDrating Beauty</li>
+                                                <li class="categorymenu__item-general">HyDrating Beauty</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Suncare</li>
+                                                <li class="categorymenu__item-general">Suncare</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Winter Beauty</li>
+                                                <li class="categorymenu__item-general">Winter Beauty</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Gifts</li>
+                                                <li class="categorymenu__item-general">Gifts</li>
                                             </a>  
                                         </ul>
                                     </div>
@@ -1141,100 +1148,100 @@
                                 </a>
                             </div>
                             <div class="categorymenu11">
-                                <div class="header-categorymenu11">
+                                <div class="header-categorymenu">
                                     <div class="header__categorymenu10">
-                                        <ul class="categorymenu7-list">
+                                        <ul class="categorymenu-list">
                                             <h4 class="categorymenu7__heading">home & gifts</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Home</li>
+                                                <li class="categorymenu__item-general">All Home</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Arts and Prints</li>
+                                                <li class="categorymenu__item-general">Arts and Prints</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Books</li>
+                                                <li class="categorymenu__item-general">Books</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Candles and Room Frangrance</li>
+                                                <li class="categorymenu__item-general">Candles and Room Frangrance</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Decorative Objects</li>
+                                                <li class="categorymenu__item-general">Decorative Objects</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Tableware</li>
+                                                <li class="categorymenu__item-general">Tableware</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Throws and Cushions</li>
+                                                <li class="categorymenu__item-general">Throws and Cushions</li>
                                             </a>  
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu10">
-                                        <ul class="categorymenu7-list header__categorymenu3-brght">
+                                        <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">gifts</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Gifts</li>
+                                                <li class="categorymenu__item-general">All Gifts</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Can't Go Wrong</li>
+                                                <li class="categorymenu__item-general">Can't Go Wrong</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Small Gestures</li>
+                                                <li class="categorymenu__item-general">Small Gestures</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Big Gestures</li>
+                                                <li class="categorymenu__item-general">Big Gestures</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Beauty</li>
+                                                <li class="categorymenu__item-general">Beauty</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Accessories</li>
+                                                <li class="categorymenu__item-general">Accessories</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Jewelry & Watches</li>
+                                                <li class="categorymenu__item-general">Jewelry & Watches</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Lingerie & Loungewear</li>
+                                                <li class="categorymenu__item-general">Lingerie & Loungewear</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Home</li>
+                                                <li class="categorymenu__item-general">Home</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Gifts for Him</li>
+                                                <li class="categorymenu__item-general">Gifts for Him</li>
                                             </a>  
                                         </ul>
                                     </div>
                                     <div class="header__categorymenu10">
-                                        <ul class="categorymenu7-list header__categorymenu3-brght">
+                                        <ul class="categorymenu7list header__categorymenu-brght1">
                                             <h4 class="categorymenu7__heading">designers</h4>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Anissa Kermiche</li>
+                                                <li class="categorymenu__item-general">Anissa Kermiche</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">AP8</li>
+                                                <li class="categorymenu__item-general">AP8</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Assouline</li>
+                                                <li class="categorymenu__item-general">Assouline</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Ginori</li>
+                                                <li class="categorymenu__item-general">Ginori</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">L'Objet</li>
+                                                <li class="categorymenu__item-general">L'Objet</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">La DoubleJ</li>
+                                                <li class="categorymenu__item-general">La DoubleJ</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Loewe Home Scents</li>
+                                                <li class="categorymenu__item-general">Loewe Home Scents</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Smythson</li>
+                                                <li class="categorymenu__item-general">Smythson</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">Trudon</li>
+                                                <li class="categorymenu__item-general">Trudon</li>
                                             </a>
                                             <a href="" class="categorymenu__link">
-                                                <li class="categorymenu7-item">All Designers</li>
+                                                <li class="categorymenu__item-general">All Designers</li>
                                             </a>  
                                         </ul>
                                     </div>
@@ -1619,11 +1626,11 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="scrolltotop">
+            <a href="#" class="scrolltotop">
                 <div class="scrolltotop__icon">
                     <i class="scrolltotop__iconup fa-solid fa-arrow-up"></i>
                 </div>
-            </div>
+            </a>
             <div class="ftr-pagination">
                 <div class="pagination__wrapper">
                     <div class="pagination__left ">
